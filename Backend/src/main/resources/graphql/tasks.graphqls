@@ -1,0 +1,34 @@
+enum TaskImportance {
+    HIGH
+    MEDIUM
+    LOW
+}
+
+enum TaskStateEnum {
+    NEW
+    IN_PROGRESS
+    DONE
+}
+
+    type TaskResponse {
+        id: ID!
+        subject: String
+        description: String
+        deadline: String
+        importance: TaskImportance
+        assignee: String
+        state: TaskStateEnum
+        notes: String
+    }
+
+    type Query {
+        getAllTasks: [TaskResponse]
+        getTaskById(id: ID!): TaskResponse
+    }
+
+    type Mutation {
+        createTask(subject: String, description: String, deadline: String, importance: String, assignee: String, state: String, notes: String): TaskResponse
+        deleteTask(id: ID!): Boolean
+        updateTask(id: ID!, subject: String, description: String, deadline: String, importance: String, assignee: String, state: String, notes: String): TaskResponse
+    }
+
