@@ -1,2 +1,18 @@
-package cz.hejda.backend.exceptions;public class ApiError {
+package cz.hejda.backend.exceptions;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class ApiError {
+
+    private int status;
+    private String message;
+    private LocalDateTime timestamp;
+
 }
