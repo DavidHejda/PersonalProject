@@ -126,6 +126,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/pages/Landing.Pagetsx"],
   "exclude": ["node_modules"]
 }

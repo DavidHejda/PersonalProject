@@ -1,9 +1,9 @@
 package cz.hejda.backend.modules.tasks.enums;
 
 public enum TaskImportance {
-    LOW("low"),
-    MEDIUM("medium"),
-    HIGH("high");
+    LOW("Low"),
+    MEDIUM("Medium"),
+    HIGH("High");
 
     private final String code;
 

@@ -1,0 +1,57 @@
+type Query {
+    getAllBusinessTasks: [BusinessTaskResponse]
+    getBusinessTaskById(id: ID!): BusinessTaskResponse
+}
+
+type Mutation {
+    createBusinessTask(input: BusinessTaskRequest): BusinessTaskResponse
+    deleteBusinessTask(id: ID!): Boolean
+    updateBusinessTask(updateTask: UpdateBusinessTaskRequest): BusinessTaskResponse
+}
+
+input BusinessTaskRequest {
+    subject: String
+    description: String
+    deadline: String
+    importance: TaskImportance
+    assignee: String
+    state: TaskStateEnum
+    notes: String
+}
+
+input UpdateBusinessTaskRequest {
+    id: ID!
+    subject: String
+    description: String
+    deadline: String
+    importance: TaskImportance
+    assignee: String
+    state: TaskStateEnum
+    notes: String
+}
+
+    type BusinessTaskResponse {
+        id: ID!
+        subject: String
+        description: String
+        deadline: String
+        importance: String
+        assignee: String
+        state: String
+        notes: String
+    }
+
+enum TaskImportance {
+    HIGH
+    MEDIUM
+    LOW
+}
+
+enum TaskStateEnum {
+    NEW
+    IN_PROGRESS
+    DONE
+}
+
+
+

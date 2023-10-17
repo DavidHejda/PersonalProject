@@ -1,19 +1,17 @@
 package cz.hejda.backend.modules.tasks.response;
 
-import cz.hejda.backend.modules.tasks.enums.TaskImportance;
-import cz.hejda.backend.modules.tasks.enums.TaskStateEnum;
-import lombok.Builder;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-@Data
-@Builder
+@SuperBuilder(toBuilder = true)
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
 public class TaskResponse {
-    private Long id;
+    private String id;
     private String subject;
     private String description;
-    private String deadline;
-    private TaskImportance importance;
-    private String assignee;
-    private TaskStateEnum state;
     private String notes;
 }

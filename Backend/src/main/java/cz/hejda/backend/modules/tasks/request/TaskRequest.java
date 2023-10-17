@@ -1,17 +1,14 @@
 package cz.hejda.backend.modules.tasks.request;
 
-import cz.hejda.backend.modules.tasks.enums.TaskImportance;
-import cz.hejda.backend.modules.tasks.enums.TaskStateEnum;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
 public class TaskRequest {
-
     private String subject;
     private String description;
-    private String deadline;
-    private TaskImportance importance;
-    private String assignee;
-    private TaskStateEnum state;
     private String notes;
 }

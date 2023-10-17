@@ -1,6 +1,89 @@
-2023-09-12T07:30:33.216+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h23m712ms549µs800ns).
-2023-09-12T07:35:36.447+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m10s929ms611µs).
-2023-09-12T11:53:42.888+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m3s888ms918µs800ns).
-2023-09-12T12:38:22.891+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m39s742ms252µs200ns).
-2023-09-12T13:46:15.679+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m21s937ms719µs400ns).
-2023-09-12T22:41:32.178+02:00  WARN 4276 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h47m52s522ms392µs300ns).
+2023-10-17T07:46:11.577+02:00 DEBUG 14816 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : OPTIONS "/graphql", parameters={}
+2023-10-17T07:46:11.629+02:00 DEBUG 14816 --- [http-nio-8282-exec-5] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x0000000801256590@4d6b0709
+2023-10-17T07:46:11.633+02:00 DEBUG 14816 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-17T07:46:11.639+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T07:46:11.641+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x0000000801256590@4d6b0709
+2023-10-17T07:46:11.665+02:00  INFO 14816 --- [http-nio-8282-exec-6] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T07:46:11.691+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T07:46:11.692+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T07:46:11.693+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T07:46:11.694+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T07:46:11.697+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@861dbe5]
+2023-10-17T07:46:11.700+02:00 DEBUG 14816 --- [http-nio-8282-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2023-10-17T18:34:22.988+02:00  INFO 14520 --- [main] cz.hejda.backend.BackendApplication      : Starting BackendApplication using Java 17.0.4 with PID 14520 (C:\CodeOfMine\PersonalProject\Backend\target\classes started by uzivatel in C:\CodeOfMine\PersonalProject\Backend)
+2023-10-17T18:34:22.991+02:00  INFO 14520 --- [main] cz.hejda.backend.BackendApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-10-17T18:34:23.569+02:00  INFO 14520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-10-17T18:34:23.685+02:00  INFO 14520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 1 MongoDB repository interfaces.
+2023-10-17T18:34:24.005+02:00  INFO 14520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8282 (http)
+2023-10-17T18:34:24.011+02:00  INFO 14520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-17T18:34:24.012+02:00  INFO 14520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-10-17T18:34:24.073+02:00  INFO 14520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-17T18:34:24.073+02:00  INFO 14520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1037 ms
+2023-10-17T18:34:24.212+02:00  INFO 14520 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.4+8-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@41bfa9e9, com.mongodb.Jep395RecordCodecProvider@68b7d0ef]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-10-17T18:34:24.243+02:00  INFO 14520 --- [cluster-ClusterId{value='652eb790577921595a93fee8', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33101500}
+2023-10-17T18:34:24.708+02:00 DEBUG 14520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-17T18:34:24.784+02:00 DEBUG 14520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2023-10-17T18:34:25.017+02:00  INFO 14520 --- [main] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2023-10-17T18:34:25.186+02:00  INFO 14520 --- [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2023-10-17T18:34:25.195+02:00 DEBUG 14520 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
+2023-10-17T18:34:25.203+02:00 DEBUG 14520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui.html, /vendor/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-10-17T18:34:25.206+02:00 DEBUG 14520 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-17T18:34:25.297+02:00  INFO 14520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8282 (http) with context path ''
+2023-10-17T18:34:25.303+02:00  INFO 14520 --- [main] cz.hejda.backend.BackendApplication      : Started BackendApplication in 2.673 seconds (process running for 3.672)
+2023-10-17T18:45:30.650+02:00  INFO 14520 --- [http-nio-8282-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17T18:45:30.650+02:00  INFO 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-17T18:45:30.650+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-17T18:45:30.650+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-17T18:45:30.650+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-17T18:45:30.651+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4ba7cbaf
+2023-10-17T18:45:30.652+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6656c18a
+2023-10-17T18:45:30.652+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-17T18:45:30.652+02:00  INFO 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-17T18:45:30.658+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/graphql", parameters={}
+2023-10-17T18:45:30.674+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:45:30.679+02:00 DEBUG 14520 --- [http-nio-8282-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-17T18:45:30.684+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T18:45:30.686+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:45:30.779+02:00  INFO 14520 --- [http-nio-8282-exec-2] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T18:45:30.892+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T18:45:30.892+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T18:45:30.895+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T18:45:30.898+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T18:45:30.900+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@4146294a]
+2023-10-17T18:45:30.911+02:00 DEBUG 14520 --- [http-nio-8282-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2023-10-17T18:45:33.137+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T18:45:33.138+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:45:33.139+02:00  INFO 14520 --- [http-nio-8282-exec-9] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T18:45:33.145+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T18:45:33.145+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T18:45:33.146+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T18:45:33.146+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T18:45:33.148+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@24134730]
+2023-10-17T18:45:33.150+02:00 DEBUG 14520 --- [http-nio-8282-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2023-10-17T18:45:50.264+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T18:45:50.265+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:45:50.268+02:00  INFO 14520 --- [http-nio-8282-exec-4] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T18:45:50.278+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T18:45:50.278+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T18:45:50.278+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T18:45:50.279+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T18:45:50.280+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@5c999b16]
+2023-10-17T18:45:50.282+02:00 DEBUG 14520 --- [http-nio-8282-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2023-10-17T18:45:57.185+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T18:45:57.186+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:45:57.190+02:00  INFO 14520 --- [http-nio-8282-exec-5] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T18:45:57.200+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T18:45:57.200+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T18:45:57.200+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T18:45:57.201+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T18:45:57.203+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@f5b2d52]
+2023-10-17T18:45:57.204+02:00 DEBUG 14520 --- [http-nio-8282-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2023-10-17T18:49:31.182+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/graphql", parameters={}
+2023-10-17T18:49:31.184+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.w.s.f.support.RouterFunctionMapping  : Mapped to org.springframework.boot.autoconfigure.graphql.servlet.GraphQlWebMvcAutoConfiguration$$Lambda$1511/0x000000080125a120@3b047fab
+2023-10-17T18:49:31.187+02:00  INFO 14520 --- [http-nio-8282-exec-7] c.h.b.m.t.s.i.BusinessTaskServiceImpl    : Getting all tasks
+2023-10-17T18:49:31.193+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.w.c.request.async.WebAsyncManager    : Started async request
+2023-10-17T18:49:31.193+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.w.c.request.async.WebAsyncManager    : Async result set, dispatch to /graphql
+2023-10-17T18:49:31.194+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2023-10-17T18:49:31.194+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/graphql", parameters={}
+2023-10-17T18:49:31.195+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.w.s.f.s.HandlerFunctionAdapter       : Resume with async result [org.springframework.web.servlet.function.DefaultEntityResponseBuilder$DefaultEntityResponse@53bfd771]
+2023-10-17T18:49:31.195+02:00 DEBUG 14520 --- [http-nio-8282-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200

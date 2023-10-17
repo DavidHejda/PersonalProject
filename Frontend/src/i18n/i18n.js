@@ -4,6 +4,8 @@ import { initReactI18next } from 'react-i18next';
 import gbTranslations from './locales/gb.js';
 import czTranslations from './locales/cz.js';
 import huTranslations from './locales/hu.js';
+import { getFromLocalStorage } from '../utils/localStorage.tsx';
+import { LANGUAGE } from '../commons/constants.tsx';
 
 const resources = {
   gb: gbTranslations,
@@ -13,7 +15,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'hu',
+  lng: getFromLocalStorage(LANGUAGE) || 'gb',
   // fallbackLng: 'en',
   ns: ['General', 'Tasks', 'Projects', 'Tasks:TableHeaders'],
   defaultNS: 'General',

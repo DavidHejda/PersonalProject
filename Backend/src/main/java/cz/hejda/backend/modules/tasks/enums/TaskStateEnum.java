@@ -1,9 +1,9 @@
 package cz.hejda.backend.modules.tasks.enums;
 
 public enum TaskStateEnum {
-    NEW("new"),
-    IN_PROGRESS("in_progress"),
-    DONE("done");
+    NEW("New"),
+    IN_PROGRESS("In progress"),
+    DONE("Done");
 
     private final String code;
 
